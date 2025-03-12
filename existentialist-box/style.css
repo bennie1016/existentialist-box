@@ -1,14 +1,96 @@
+/* Global Styling */
 body {
-    font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: auto;
+    background-color: #1a1a1a;
+    color: #e0dfd5; /* Slightly off-white for a warmer, old-paper feel */
+    font-family: 'Georgia', serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    text-align: center;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #111;
+    border-bottom: 3px solid #8d8d8d;
 }
-h1, h2 {
-    color: #333;
+
+h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
+
+h2 {
+    font-size: 1.8em;
+    border-left: 5px solid #8d8d8d;
+    padding-left: 10px;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 1.1em;
+    text-align: justify;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Links */
 a {
-    color: #007bff;
+    color: #c5a5ff; /* Muted purple for academic/intellectual feel */
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #ffcc66; /* Golden hue on hover */
+    text-decoration: underline;
+}
+
+/* Navigation & Footer */
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: #111;
+    color: #8d8d8d;
+    font-size: 0.9em;
+}
+
+/* Section Blocks */
+section {
+    background: rgba(50, 50, 50, 0.2);
+    padding: 20px;
+    border-left: 3px solid #8d8d8d;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+/* Interactive Hover Effects */
+section:hover {
+    background: rgba(80, 80, 80, 0.3);
+    transition: background 0.5s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    body {
+        padding: 10px;
+    }
+    p, h2 {
+        text-align: left;
+    }
 }
